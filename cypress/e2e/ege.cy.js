@@ -26,7 +26,7 @@ describe('Ing. Yngve Ege AS - Main Page', () => {
 
   it('should display the contact phone number with correct link', () => {
     cy.visit('/');
-    cy.contains('23 24 10 00').should('have.attr', 'href', 'tel:23 24 10 00');
+    cy.contains('23 24 10 00').should('have.attr', 'href', 'tel:+4723241000');
   });
 
   it('should display at least three product images or illustrations', () => {
